@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Pollería Roky's</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div class="navbar">
+
+<div class="logo">🐔 Troky's</div>
+
+<div class="menu">
+<a href="/">Inicio</a>
+<a href="/menu">Menú</a>
+<a href="/promociones">Promociones</a>
+<a href="/contacto">Contacto</a>
+</div>
+
+</div>
+
+<div class="banner">
+<img src="/static/images1.jpg">
+</div>
+
+<h1 class="titulo">PROMOCIONES</h1>
+
+<div class="slider-container">
+
+<div class="slider-track" id="track">
+
+    <div class="card"><div class="card-box">
+        <img src="/static/images2.jpg">
+        <h2>1 Pollo + Papas</h2>
+        <p>S/ 89.90</p>
+    </div></div>
+
+    <div class="card"><div class="card-box">
+        <img src="/static/image3.jpeg">
+        <h2>Hamburguesa</h2>
+        <p>S/ 15.90</p>
+    </div></div>
+
+    <div class="card"><div class="card-box">
+        <img src="/static/image4.jpeg">
+        <h2>Parrilla</h2>
+        <p>S/ 49.90</p>
+    </div></div>
+
+    <div class="card"><div class="card-box">
+        <img src="/static/image5.jpg">
+        <h2>Combo Familiar</h2>
+        <p>S/ 99.90</p>
+    </div></div>
+
+    <div class="card"><div class="card-box">
+        <img src="/static/image6.jpg">
+        <h2>Combo Personal</h2>
+        <p>S/ 29.90</p>
+    </div></div>
+
+    <div class="card"><div class="card-box">
+        <img src="/static/image7.jpg">
+        <h2>Oferta Especial</h2>
+        <p>S/ 39.90</p>
+    </div></div>
+
+</div>
+
+</div>
+
+<div class="dots" id="dots"></div>
+
+<footer>
+<h3>📍 Lima - Perú</h3>
+<p>© 2025 Pollería Troky's</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>

@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+body{
+    background: #f5f5f5;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 2px 5px gray;
+}
+
+.logo{
+    font-size: 35px;
+    color: green;
+    font-weight: bold;
+}
+
+.menu a{
+    text-decoration: none;
+    margin: 15px;
+    color: black;
+    font-weight: bold;
+}
+
+/* ================= BANNER ================= */
+
+.banner{
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ================= TITULO ================= */
+
+.titulo{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+}
+
+/* ================= SLIDER ================= */
+
+.slider-container{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.slider-track{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* ================= CARD (TAMAÑO ORIGINAL TUYO) ================= */
+
+.card{
+    flex: 0 0 33.333%;
+    padding: 6px;   /* 🔥 SOLO SEPARACIÓN CONTROLADA */
+}
+
+/* 🔥 ESTE ES TU TAMAÑO ORIGINAL (NO SE TOCA) */
+.card-box{
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px gray;
+    transition: 0.3s;
+
+    width: 300px;   /* ✔ tamaño anterior */
+    margin: auto;
+}
+
+.card-box:hover{
+    transform: scale(1.05);
+}
+
+.card-box img{
+    width: 100%;
+    height: 200px;   /* ✔ altura original */
+    object-fit: cover;
+}
+
+.card-box h2{
+    text-align: center;
+    margin: 15px;
+}
+
+.card-box p{
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+}
+
+/* ================= DOTS ================= */
+
+.dots{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot{
+    height: 10px;
+    width: 10px;
+    margin: 4px;
+    display: inline-block;
+    border-radius: 50%;
+    background: gray;
+}
+
+.active-dot{
+    background: orange;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
